@@ -16,6 +16,19 @@ const APPS = [
     status: "ready",
     tags: ["Music", "Learn Together"],
   },
+  {
+    id: "life-skills",
+    name: "Life Skills Adventure",
+    description: "Fix things, explore outdoors, ride bikes, cook food, and handle emergencies like a boss!",
+    emoji: "🛠️",
+    secondEmoji: "🔥",
+    color: "#FF6B35",
+    colorLight: "#FFF3E0",
+    gradient: "linear-gradient(135deg, #FF6B35, #FFA726)",
+    url: "/life-skills/",
+    status: "ready",
+    tags: ["Life Skills", "Independence"],
+  },
   // ── Future apps — change status to "ready" and add a url when deployed ──
   {
     id: "chess",
@@ -60,7 +73,7 @@ const APPS = [
 
 // ─── Floating Emoji Background ──────────────────────────
 function FloatingEmojis() {
-  const emojis = ["🎵", "⭐", "🌈", "🎸", "🪕", "🦋", "🌻", "🎨", "📚", "🔭", "🧩", "🌙"];
+  const emojis = ["🎵", "⭐", "🌈", "🎸", "🪕", "🦋", "🌻", "🎨", "📚", "🔭", "🧩", "🌙", "🔧", "🚲", "🍳"];
   return (
     <div style={{
       position: "fixed", inset: 0, pointerEvents: "none", overflow: "hidden", zIndex: 0,
