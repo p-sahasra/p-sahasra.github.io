@@ -42,7 +42,19 @@ const APPS = [
     status: "ready",
     tags: ["Mental Math", "Brain Training"],
   },
-  // ── Future apps — change status to "ready" and add a url when deployed ──
+  {
+    id: "french",
+    name: "Our French Adventure",
+    description: "Learn French together as a family — real phrases for real moments, from bonjour to bonne nuit!",
+    emoji: "🇫🇷",
+    secondEmoji: "🗣️",
+    color: "#E53935",
+    colorLight: "#FFEBEE",
+    gradient: "linear-gradient(135deg, #E53935, #EF5350)",
+    url: "/french-adventure/",
+    status: "ready",
+    tags: ["French", "Learn Together"],
+  },
   {
     id: "chess",
     name: "Our Chess Adventure",
