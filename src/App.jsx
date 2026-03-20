@@ -29,6 +29,19 @@ const APPS = [
     status: "ready",
     tags: ["Life Skills", "Independence"],
   },
+  {
+    id: "math",
+    name: "Math Adventure",
+    description: "Mental math training — flash, think, answer! Subitizing, number bonds, patterns, and more!",
+    emoji: "🧮",
+    secondEmoji: "🔢",
+    color: "#7E57C2",
+    colorLight: "#F3E5F5",
+    gradient: "linear-gradient(135deg, #7E57C2, #B388FF)",
+    url: "/math-journey/",
+    status: "ready",
+    tags: ["Mental Math", "Brain Training"],
+  },
   // ── Future apps — change status to "ready" and add a url when deployed ──
   {
     id: "chess",
@@ -73,7 +86,7 @@ const APPS = [
 
 // ─── Floating Emoji Background ──────────────────────────
 function FloatingEmojis() {
-  const emojis = ["🎵", "⭐", "🌈", "🎸", "🪕", "🦋", "🌻", "🎨", "📚", "🔭", "🧩", "🌙", "🔧", "🚲", "🍳"];
+  const emojis = ["🎵", "⭐", "🌈", "🎸", "🪕", "🦋", "🌻", "🎨", "📚", "🔭", "🧩", "🌙", "🔧", "🚲", "🍳", "🧮"];
   return (
     <div style={{
       position: "fixed", inset: 0, pointerEvents: "none", overflow: "hidden", zIndex: 0,
