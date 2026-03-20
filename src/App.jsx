@@ -19,15 +19,15 @@ const APPS = [
   // ── Future apps — change status to "ready" and add a url when deployed ──
   {
     id: "chess",
-    name: "Chess Puzzles",
-    description: "Solve fun chess puzzles together and track your wins!",
+    name: "Our Chess Adventure",
+    description: "Learn chess together — 9 lessons from pawns to playing a full game!",
     emoji: "♟️",
     secondEmoji: "🧠",
     color: "#4ECDC4",
     colorLight: "#F0FFFE",
     gradient: "linear-gradient(135deg, #4ECDC4, #7EDDD6)",
-    url: "#",
-    status: "coming-soon",
+    url: "/chess-adventure/",
+    status: "ready",
     tags: ["Thinking", "Puzzles"],
   },
   {
