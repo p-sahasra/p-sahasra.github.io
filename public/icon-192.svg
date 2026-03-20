@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.3)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+  <!-- Rounded background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#bg)"/>
+  <!-- Subtle shine overlay -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#shine)"/>
+  <!-- Small stars -->
+  <circle cx="100" cy="120" r="6" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="400" cy="90" r="4" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="80" cy="300" r="5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="420" cy="350" r="7" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="370" cy="160" r="3" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="140" cy="400" r="4" fill="rgba(255,255,255,0.45)"/>
+  <!-- Rocket body (white silhouette) -->
+  <g filter="url(#shadow)" transform="translate(256, 256) rotate(-45) translate(-256, -256)">
+    <!-- Main rocket body -->
+    <path d="M256 80 C256 80 310 160 310 280 L310 320 L202 320 L202 280 C202 160 256 80 256 80Z" fill="white"/>
+    <!-- Nose cone highlight -->
+    <path d="M256 80 C256 80 285 140 295 220 L256 120 L217 220 C227 140 256 80 256 80Z" fill="rgba(255,255,255,0.9)"/>
+    <!-- Window -->
+    <circle cx="256" cy="220" r="28" fill="url(#bg)"/>
+    <circle cx="256" cy="220" r="20" fill="#1a1a2e"/>
+    <circle cx="248" cy="212" r="6" fill="rgba(255,255,255,0.4)"/>
+    <!-- Left fin -->
+    <path d="M202 280 L150 360 L202 340Z" fill="white"/>
+    <!-- Right fin -->
+    <path d="M310 280 L362 360 L310 340Z" fill="white"/>
+    <!-- Bottom detail -->
+    <rect x="220" y="320" width="72" height="20" rx="4" fill="rgba(255,255,255,0.8)"/>
+    <!-- Flame -->
+    <path d="M236 340 L256 420 L276 340Z" fill="#fde68a" opacity="0.9"/>
+    <path d="M244 340 L256 400 L268 340Z" fill="#fbbf24" opacity="0.9"/>
+    <path d="M250 340 L256 380 L262 340Z" fill="white" opacity="0.8"/>
+  </g>
+</svg>
